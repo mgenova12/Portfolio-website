@@ -6,6 +6,20 @@ export default class Pages extends React.Component {
   
   constructor(props) {
     super(props);
+
+    this.state = {
+      projects: [
+        {
+          title: 'name1',
+          category: 'cat1'
+        },
+        {
+          title: 'name2',
+          category: 'cat2'
+        }
+      ]
+    }
+
   }
 
   render() {
@@ -13,7 +27,7 @@ export default class Pages extends React.Component {
     return (
       <div> 
         <h2> SHOW SOMETHING </h2>
-        <Projects />
+        <Projects projects={this.state.projects}/>
       </div> 
     );
   }
