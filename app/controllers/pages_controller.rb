@@ -5,4 +5,9 @@ class PagesController < ApplicationController
     # @pages_props = { name: "Stranger" }
   end
 
+  def portfolio 
+
+  end
+
+
 end
