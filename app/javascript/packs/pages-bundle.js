@@ -1,9 +1,9 @@
 import ReactOnRails from 'react-on-rails';
 
-import Pages from '../bundles/Pages/components/Pages';
+import Portfolio from '../bundles/Portfolio/components/Portfolio';
 
 // This is how react_on_rails can see the HelloWorld in the browser.
 ReactOnRails.register({
-  Pages,
+  Portfolio,
 });
 
