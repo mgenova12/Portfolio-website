@@ -4,14 +4,13 @@ import ProjectsItem from './ProjectItem'
 
 export default class Projects extends React.Component {
   
-
   render() {
     let projectItems;
     if(this.props.projects){
       projectItems = this.props.projects.map(project => {
         // console.log(project)
         return (
-          <ProjectsItem key={project.title} project={project} />
+          <ProjectsItem key={project.id} project={project} />
         );
       })
     }

@@ -15,3 +15,11 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+
+$(document).on("turbolinks:load", function(){
+  $(".spinner").delay(2000).fadeOut(300, function(){
+    $(".myWorks").removeClass('pageLoad');
+  });
+});
+
